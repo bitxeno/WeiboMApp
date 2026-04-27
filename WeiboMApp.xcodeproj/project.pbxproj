@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44CE17E2F9F562B004C30E9 /* libWeiboMAppDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F44CE17D2F9F562B004C30E9 /* libWeiboMAppDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F44CE1852F9F562B004C30E9 /* WeiboMAppDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1842F9F562B004C30E9 /* WeiboMAppDylib.mm */; };
+		F44CE1882F9F562B004C30E9 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1872F9F562B004C30E9 /* MDConfigManager.h */; };
+		F44CE18A2F9F562B004C30E9 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1892F9F562B004C30E9 /* MDConfigManager.m */; };
+		F44CE18C2F9F562B004C30E9 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE18B2F9F562B004C30E9 /* MDMethodTrace.h */; };
+		F44CE18E2F9F562B004C30E9 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE18D2F9F562B004C30E9 /* MDMethodTrace.m */; };
+		F44CE1912F9F562B004C30E9 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1902F9F562B004C30E9 /* a1a2-selectortramps-arm.s */; };
+		F44CE1932F9F562B004C30E9 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1922F9F562B004C30E9 /* a1a2-selectortramps-arm64.s */; };
+		F44CE1952F9F562B004C30E9 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1942F9F562B004C30E9 /* a1a2-selectortramps-i386.s */; };
+		F44CE1972F9F562B004C30E9 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1962F9F562B004C30E9 /* a1a2-selectortramps-x86_64.s */; };
+		F44CE1992F9F562B004C30E9 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1982F9F562B004C30E9 /* a2a3-selectortramps-arm.s */; };
+		F44CE19B2F9F562B004C30E9 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = F44CE19A2F9F562B004C30E9 /* a2a3-selectortramps-i386.s */; };
+		F44CE19D2F9F562B004C30E9 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = F44CE19C2F9F562B004C30E9 /* a2a3-selectortramps-x86_64.s */; };
+		F44CE19F2F9F562B004C30E9 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE19E2F9F562B004C30E9 /* OCMethodTrace.h */; };
+		F44CE1A12F9F562B004C30E9 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1A02F9F562B004C30E9 /* OCMethodTrace.m */; };
+		F44CE1A32F9F562B004C30E9 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1A22F9F562B004C30E9 /* OCSelectorTrampolines.h */; };
+		F44CE1A52F9F562B004C30E9 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1A42F9F562B004C30E9 /* OCSelectorTrampolines.mm */; };
+		F44CE1A92F9F562B004C30E9 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1A82F9F562B004C30E9 /* LLDBTools.h */; };
+		F44CE1AB2F9F562B004C30E9 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1AA2F9F562B004C30E9 /* LLDBTools.mm */; };
+		F44CE1B02F9F562B004C30E9 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1AF2F9F562B004C30E9 /* AntiAntiDebug.m */; };
+		F44CE1B32F9F562B004C30E9 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1B22F9F562B004C30E9 /* fishhook.c */; };
+		F44CE1B52F9F562B004C30E9 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1B42F9F562B004C30E9 /* fishhook.h */; };
+		F44CE1B72F9F562B004C30E9 /* WeiboMAppDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1B62F9F562B004C30E9 /* WeiboMAppDylib.h */; };
+		F44CE1B92F9F562B004C30E9 /* WeiboMAppDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1B82F9F562B004C30E9 /* WeiboMAppDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44CE17F2F9F562B004C30E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44CE1612F9F562B004C30E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44CE17C2F9F562B004C30E9;
+			remoteInfo = WeiboMAppDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F44CE1692F9F562B004C30E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F44CE17E2F9F562B004C30E9 /* libWeiboMAppDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F44CE16C2F9F562B004C30E9 /* WeiboMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44CE17D2F9F562B004C30E9 /* libWeiboMAppDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWeiboMAppDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44CE1832F9F562B004C30E9 /* WeiboMAppDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = WeiboMAppDylib.xm; sourceTree = "<group>"; };
+		F44CE1842F9F562B004C30E9 /* WeiboMAppDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WeiboMAppDylib.mm; sourceTree = "<group>"; };
+		F44CE1872F9F562B004C30E9 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		F44CE1892F9F562B004C30E9 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		F44CE18B2F9F562B004C30E9 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		F44CE18D2F9F562B004C30E9 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		F44CE1902F9F562B004C30E9 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		F44CE1922F9F562B004C30E9 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		F44CE1942F9F562B004C30E9 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		F44CE1962F9F562B004C30E9 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		F44CE1982F9F562B004C30E9 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		F44CE19A2F9F562B004C30E9 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		F44CE19C2F9F562B004C30E9 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		F44CE19E2F9F562B004C30E9 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		F44CE1A02F9F562B004C30E9 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		F44CE1A22F9F562B004C30E9 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		F44CE1A42F9F562B004C30E9 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		F44CE1A62F9F562B004C30E9 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		F44CE1A82F9F562B004C30E9 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		F44CE1AA2F9F562B004C30E9 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		F44CE1AD2F9F562B004C30E9 /* WeiboMAppDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiboMAppDylib-Prefix.pch"; sourceTree = "<group>"; };
+		F44CE1AF2F9F562B004C30E9 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		F44CE1B22F9F562B004C30E9 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		F44CE1B42F9F562B004C30E9 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		F44CE1B62F9F562B004C30E9 /* WeiboMAppDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboMAppDylib.h; sourceTree = "<group>"; };
+		F44CE1B82F9F562B004C30E9 /* WeiboMAppDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboMAppDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F44CE1BA2F9F562B004C30E9 /* Exceptions for "WeiboMApp" folder in "WeiboMApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				icon.png,
+				Info.plist,
+				"Scripts/quick-resign.sh",
+				"TargetApp/put ipa or app here",
+			);
+			target = F44CE16B2F9F562B004C30E9 /* WeiboMApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F44CE16E2F9F562B004C30E9 /* WeiboMApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F44CE1BA2F9F562B004C30E9 /* Exceptions for "WeiboMApp" folder in "WeiboMApp" target */,
+			);
+			path = WeiboMApp;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F44CE1662F9F562B004C30E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44CE17A2F9F562B004C30E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44CE1602F9F562B004C30E9 = {
+			isa = PBXGroup;
+			children = (
+				F44CE16E2F9F562B004C30E9 /* WeiboMApp */,
+				F44CE1812F9F562B004C30E9 /* WeiboMAppDylib */,
+				F44CE16D2F9F562B004C30E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44CE16D2F9F562B004C30E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE16C2F9F562B004C30E9 /* WeiboMApp.app */,
+				F44CE17D2F9F562B004C30E9 /* libWeiboMAppDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44CE1812F9F562B004C30E9 /* WeiboMAppDylib */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1B62F9F562B004C30E9 /* WeiboMAppDylib.h */,
+				F44CE1B82F9F562B004C30E9 /* WeiboMAppDylib.m */,
+				F44CE1822F9F562B004C30E9 /* Logos */,
+				F44CE1862F9F562B004C30E9 /* Config */,
+				F44CE18F2F9F562B004C30E9 /* Trace */,
+				F44CE1A72F9F562B004C30E9 /* Tools */,
+				F44CE1AE2F9F562B004C30E9 /* AntiAntiDebug */,
+				F44CE1B12F9F562B004C30E9 /* fishhook */,
+				F44CE1AC2F9F562B004C30E9 /* Supporting Files */,
+			);
+			path = WeiboMAppDylib;
+			sourceTree = "<group>";
+		};
+		F44CE1822F9F562B004C30E9 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1832F9F562B004C30E9 /* WeiboMAppDylib.xm */,
+				F44CE1842F9F562B004C30E9 /* WeiboMAppDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		F44CE1862F9F562B004C30E9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1872F9F562B004C30E9 /* MDConfigManager.h */,
+				F44CE1892F9F562B004C30E9 /* MDConfigManager.m */,
+				F44CE18B2F9F562B004C30E9 /* MDMethodTrace.h */,
+				F44CE18D2F9F562B004C30E9 /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F44CE18F2F9F562B004C30E9 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1902F9F562B004C30E9 /* a1a2-selectortramps-arm.s */,
+				F44CE1922F9F562B004C30E9 /* a1a2-selectortramps-arm64.s */,
+				F44CE1942F9F562B004C30E9 /* a1a2-selectortramps-i386.s */,
+				F44CE1962F9F562B004C30E9 /* a1a2-selectortramps-x86_64.s */,
+				F44CE1982F9F562B004C30E9 /* a2a3-selectortramps-arm.s */,
+				F44CE19A2F9F562B004C30E9 /* a2a3-selectortramps-i386.s */,
+				F44CE19C2F9F562B004C30E9 /* a2a3-selectortramps-x86_64.s */,
+				F44CE19E2F9F562B004C30E9 /* OCMethodTrace.h */,
+				F44CE1A02F9F562B004C30E9 /* OCMethodTrace.m */,
+				F44CE1A22F9F562B004C30E9 /* OCSelectorTrampolines.h */,
+				F44CE1A42F9F562B004C30E9 /* OCSelectorTrampolines.mm */,
+				F44CE1A62F9F562B004C30E9 /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		F44CE1A72F9F562B004C30E9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1A82F9F562B004C30E9 /* LLDBTools.h */,
+				F44CE1AA2F9F562B004C30E9 /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F44CE1AC2F9F562B004C30E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1AD2F9F562B004C30E9 /* WeiboMAppDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F44CE1AE2F9F562B004C30E9 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1AF2F9F562B004C30E9 /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		F44CE1B12F9F562B004C30E9 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1B22F9F562B004C30E9 /* fishhook.c */,
+				F44CE1B42F9F562B004C30E9 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F44CE17B2F9F562B004C30E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44CE18C2F9F562B004C30E9 /* MDMethodTrace.h in Headers */,
+				F44CE19F2F9F562B004C30E9 /* OCMethodTrace.h in Headers */,
+				F44CE1A92F9F562B004C30E9 /* LLDBTools.h in Headers */,
+				F44CE1A32F9F562B004C30E9 /* OCSelectorTrampolines.h in Headers */,
+				F44CE1882F9F562B004C30E9 /* MDConfigManager.h in Headers */,
+				F44CE1B72F9F562B004C30E9 /* WeiboMAppDylib.h in Headers */,
+				F44CE1B52F9F562B004C30E9 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F44CE16B2F9F562B004C30E9 /* WeiboMApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44CE1BE2F9F562B004C30E9 /* Build configuration list for PBXNativeTarget "WeiboMApp" */;
+			buildPhases = (
+				F44CE1652F9F562B004C30E9 /* Sources */,
+				F44CE1662F9F562B004C30E9 /* Frameworks */,
+				F44CE1672F9F562B004C30E9 /* ShellScript */,
+				F44CE1682F9F562B004C30E9 /* Resources */,
+				F44CE1692F9F562B004C30E9 /* CopyFiles */,
+				F44CE16A2F9F562B004C30E9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44CE1802F9F562B004C30E9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F44CE16E2F9F562B004C30E9 /* WeiboMApp */,
+			);
+			name = WeiboMApp;
+			packageProductDependencies = (
+			);
+			productName = WeiboMApp;
+			productReference = F44CE16C2F9F562B004C30E9 /* WeiboMApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F44CE17C2F9F562B004C30E9 /* WeiboMAppDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44CE1BB2F9F562B004C30E9 /* Build configuration list for PBXNativeTarget "WeiboMAppDylib" */;
+			buildPhases = (
+				F44CE1782F9F562B004C30E9 /* ShellScript */,
+				F44CE1792F9F562B004C30E9 /* Sources */,
+				F44CE17A2F9F562B004C30E9 /* Frameworks */,
+				F44CE17B2F9F562B004C30E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeiboMAppDylib;
+			packageProductDependencies = (
+			);
+			productName = WeiboMAppDylib;
+			productReference = F44CE17D2F9F562B004C30E9 /* libWeiboMAppDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44CE1612F9F562B004C30E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					F44CE16B2F9F562B004C30E9 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					F44CE17C2F9F562B004C30E9 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = F44CE1642F9F562B004C30E9 /* Build configuration list for PBXProject "WeiboMApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44CE1602F9F562B004C30E9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F44CE16D2F9F562B004C30E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44CE16B2F9F562B004C30E9 /* WeiboMApp */,
+				F44CE17C2F9F562B004C30E9 /* WeiboMAppDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44CE1682F9F562B004C30E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F44CE1672F9F562B004C30E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${MonkeyDevPath}/Tools/pack.sh\"";
+		};
+		F44CE16A2F9F562B004C30E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${MonkeyDevPath}/Tools/pack.sh\" codesign";
+		};
+		F44CE1782F9F562B004C30E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${MonkeyDevPath}/bin/md\" --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F44CE1652F9F562B004C30E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44CE1792F9F562B004C30E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44CE1972F9F562B004C30E9 /* a1a2-selectortramps-x86_64.s in Sources */,
+				F44CE1B32F9F562B004C30E9 /* fishhook.c in Sources */,
+				F44CE1A12F9F562B004C30E9 /* OCMethodTrace.m in Sources */,
+				F44CE1B92F9F562B004C30E9 /* WeiboMAppDylib.m in Sources */,
+				F44CE18A2F9F562B004C30E9 /* MDConfigManager.m in Sources */,
+				F44CE1AB2F9F562B004C30E9 /* LLDBTools.mm in Sources */,
+				F44CE1912F9F562B004C30E9 /* a1a2-selectortramps-arm.s in Sources */,
+				F44CE19D2F9F562B004C30E9 /* a2a3-selectortramps-x86_64.s in Sources */,
+				F44CE1A52F9F562B004C30E9 /* OCSelectorTrampolines.mm in Sources */,
+				F44CE1992F9F562B004C30E9 /* a2a3-selectortramps-arm.s in Sources */,
+				F44CE1952F9F562B004C30E9 /* a1a2-selectortramps-i386.s in Sources */,
+				F44CE19B2F9F562B004C30E9 /* a2a3-selectortramps-i386.s in Sources */,
+				F44CE1932F9F562B004C30E9 /* a1a2-selectortramps-arm64.s in Sources */,
+				F44CE18E2F9F562B004C30E9 /* MDMethodTrace.m in Sources */,
+				F44CE1852F9F562B004C30E9 /* WeiboMAppDylib.mm in Sources */,
+				F44CE1B02F9F562B004C30E9 /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F44CE1802F9F562B004C30E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44CE17C2F9F562B004C30E9 /* WeiboMAppDylib */;
+			targetProxy = F44CE17F2F9F562B004C30E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F44CE1BC2F9F562B004C30E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733599CLJU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeiboMAppDylib/Supporting Files/WeiboMAppDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+					"$(MonkeyDevTheosPath)",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWeiboMAppDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WeiboMAppDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		F44CE1BD2F9F562B004C30E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 733599CLJU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeiboMAppDylib/Supporting Files/WeiboMAppDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+					"$(MonkeyDevTheosPath)",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWeiboMAppDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WeiboMAppDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F44CE1BF2F9F562B004C30E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 733599CLJU;
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = $TARGET_NAME/info.plist;
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = NO;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_CREATE_SIGN_IPA = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_DYLIB_NAME = "";
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.monkey.WeiboMApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F44CE1C02F9F562B004C30E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 733599CLJU;
+				ENABLE_BITCODE = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = $TARGET_NAME/info.plist;
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = NO;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_CREATE_SIGN_IPA = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_DYLIB_NAME = "";
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.monkey.WeiboMApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F44CE1C12F9F562B004C30E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 733599CLJU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				MonkeyDevPath = "$(HOME)/.MonkeyDev";
+				MonkeyDevTheosPath = "$(HOME)/.MonkeyDev/theos";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F44CE1C22F9F562B004C30E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 733599CLJU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				MonkeyDevPath = "$(HOME)/.MonkeyDev";
+				MonkeyDevTheosPath = "$(HOME)/.MonkeyDev/theos";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F44CE1642F9F562B004C30E9 /* Build configuration list for PBXProject "WeiboMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44CE1C12F9F562B004C30E9 /* Debug */,
+				F44CE1C22F9F562B004C30E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44CE1BB2F9F562B004C30E9 /* Build configuration list for PBXNativeTarget "WeiboMAppDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44CE1BC2F9F562B004C30E9 /* Debug */,
+				F44CE1BD2F9F562B004C30E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44CE1BE2F9F562B004C30E9 /* Build configuration list for PBXNativeTarget "WeiboMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44CE1BF2F9F562B004C30E9 /* Debug */,
+				F44CE1C02F9F562B004C30E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44CE1612F9F562B004C30E9 /* Project object */;
+}

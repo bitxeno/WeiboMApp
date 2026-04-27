@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'WeiboMAppDylib' target in the 'WeiboMAppDylib' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "Prefix.pch"  //path/to/theos/Prefix.pch
+#endif
