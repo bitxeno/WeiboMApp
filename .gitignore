@@ -47,3 +47,5 @@ fastlane/test_output
 *.app
 *.ipa
 **/.DS_Store
+WeiboMApp/tmp
+LatestBuild

@@ -2,6 +2,10 @@
 
 **无广告微博轻享版** iOS 客户端
 
+# 开发框架
+
+https://github.com/kshipeng/MonkeyDev-Next
+
 # ZXHookUtil 工具库
 
 https://github.com/SmileZXLee/ZXHookUtil

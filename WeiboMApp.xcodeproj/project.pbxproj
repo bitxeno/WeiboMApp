@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F44CE17E2F9F562B004C30E9 /* libWeiboMAppDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F44CE17D2F9F562B004C30E9 /* libWeiboMAppDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F44CE17E2F9F562B004C30E9 /* libWeiboMAppDylib.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = F44CE17D2F9F562B004C30E9 /* libWeiboMAppDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F44CE1852F9F562B004C30E9 /* WeiboMAppDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1842F9F562B004C30E9 /* WeiboMAppDylib.mm */; };
 		F44CE1882F9F562B004C30E9 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1872F9F562B004C30E9 /* MDConfigManager.h */; };
 		F44CE18A2F9F562B004C30E9 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1892F9F562B004C30E9 /* MDConfigManager.m */; };
@@ -31,6 +31,125 @@
 		F44CE1B52F9F562B004C30E9 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1B42F9F562B004C30E9 /* fishhook.h */; };
 		F44CE1B72F9F562B004C30E9 /* WeiboMAppDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1B62F9F562B004C30E9 /* WeiboMAppDylib.h */; };
 		F44CE1B92F9F562B004C30E9 /* WeiboMAppDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1B82F9F562B004C30E9 /* WeiboMAppDylib.m */; };
+		F44CE1D12F9F57E6004C30E9 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1CF2F9F57E5004C30E9 /* MDCycriptManager.h */; };
+		F44CE1D22F9F57E6004C30E9 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1D02F9F57E5004C30E9 /* MDCycriptManager.m */; };
+		F44CE2622FA05EA9004C30E9 /* ZXHttpIPGet.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE23A2FA05EA9004C30E9 /* ZXHttpIPGet.h */; };
+		F44CE2632FA05EA9004C30E9 /* ZXRequestBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE23C2FA05EA9004C30E9 /* ZXRequestBlock.h */; };
+		F44CE2642FA05EA9004C30E9 /* ZXHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1E52FA05EA9004C30E9 /* ZXHttpRequest.h */; };
+		F44CE2652FA05EA9004C30E9 /* ZXDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE20F2FA05EA9004C30E9 /* ZXDataType.h */; };
+		F44CE2662FA05EA9004C30E9 /* ZXDecimalNumberTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2112FA05EA9004C30E9 /* ZXDecimalNumberTool.h */; };
+		F44CE2672FA05EA9004C30E9 /* SqlResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2272FA05EA9004C30E9 /* SqlResult.h */; };
+		F44CE2682FA05EA9004C30E9 /* ZXShowImgView.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2492FA05EA9004C30E9 /* ZXShowImgView.h */; };
+		F44CE2692FA05EA9004C30E9 /* ZXURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE23E2FA05EA9004C30E9 /* ZXURLProtocol.h */; };
+		F44CE26A2FA05EA9004C30E9 /* NSObject+ZXToModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE21E2FA05EA9004C30E9 /* NSObject+ZXToModel.h */; };
+		F44CE26B2FA05EA9004C30E9 /* ZXShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2472FA05EA9004C30E9 /* ZXShadowView.h */; };
+		F44CE26C2FA05EA9004C30E9 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1F62FA05EA9004C30E9 /* CTBlockDescription.h */; };
+		F44CE26D2FA05EA9004C30E9 /* NSString+ZXHookRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1D72FA05EA9004C30E9 /* NSString+ZXHookRegular.h */; };
+		F44CE26E2FA05EA9004C30E9 /* ZXDataHandleHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2322FA05EA9004C30E9 /* ZXDataHandleHeaders.h */; };
+		F44CE26F2FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2382FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.h */; };
+		F44CE2702FA05EA9004C30E9 /* UIButton+ZXHookAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2542FA05EA9004C30E9 /* UIButton+ZXHookAction.h */; };
+		F44CE2712FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2182FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.h */; };
+		F44CE2722FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1D92FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.h */; };
+		F44CE2732FA05EA9004C30E9 /* ZXBlockLogTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1FC2FA05EA9004C30E9 /* ZXBlockLogTool.h */; };
+		F44CE2742FA05EA9004C30E9 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE24C2FA05EA9004C30E9 /* UIView+Toast.h */; };
+		F44CE2752FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1EA2FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.h */; };
+		F44CE2762FA05EA9004C30E9 /* ZXDataStoreCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE22B2FA05EA9004C30E9 /* ZXDataStoreCache.h */; };
+		F44CE2772FA05EA9004C30E9 /* NSObject+ZXGetProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2052FA05EA9004C30E9 /* NSObject+ZXGetProperty.h */; };
+		F44CE2782FA05EA9004C30E9 /* ZXDataHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2312FA05EA9004C30E9 /* ZXDataHandle.h */; };
+		F44CE2792FA05EA9004C30E9 /* NSData+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2162FA05EA9004C30E9 /* NSData+ZXDataConvert.h */; };
+		F44CE27A2FA05EA9004C30E9 /* ZXHookClassPro.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1F02FA05EA9004C30E9 /* ZXHookClassPro.h */; };
+		F44CE27B2FA05EA9004C30E9 /* ZXHookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE25F2FA05EA9004C30E9 /* ZXHookUtil.h */; };
+		F44CE27C2FA05EA9004C30E9 /* ZXEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1E22FA05EA9004C30E9 /* ZXEncryption.h */; };
+		F44CE27D2FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2252FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.h */; };
+		F44CE27E2FA05EA9004C30E9 /* NSString+ZXRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE20B2FA05EA9004C30E9 /* NSString+ZXRegular.h */; };
+		F44CE27F2FA05EA9004C30E9 /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1DC2FA05EA9004C30E9 /* Base64.h */; };
+		F44CE2802FA05EA9004C30E9 /* ZXClassPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE20D2FA05EA9004C30E9 /* ZXClassPrint.h */; };
+		F44CE2812FA05EA9004C30E9 /* ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2202FA05EA9004C30E9 /* ZXDataConvert.h */; };
+		F44CE2822FA05EA9004C30E9 /* UIView+ZXHookUIGet.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2572FA05EA9004C30E9 /* UIView+ZXHookUIGet.h */; };
+		F44CE2832FA05EA9004C30E9 /* NSArray+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2142FA05EA9004C30E9 /* NSArray+ZXDataConvert.h */; };
+		F44CE2842FA05EA9004C30E9 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1E82FA05EA9004C30E9 /* ANYMethodLog.h */; };
+		F44CE2852FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2032FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.h */; };
+		F44CE2862FA05EA9004C30E9 /* ZXDataHandleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2332FA05EA9004C30E9 /* ZXDataHandleLog.h */; };
+		F44CE2872FA05EA9004C30E9 /* UIButton+ZXAddAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2522FA05EA9004C30E9 /* UIButton+ZXAddAction.h */; };
+		F44CE2882FA05EA9004C30E9 /* ZXCodeFloor.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE25D2FA05EA9004C30E9 /* ZXCodeFloor.h */; };
+		F44CE2892FA05EA9004C30E9 /* ZXBlockLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1F82FA05EA9004C30E9 /* ZXBlockLog.h */; };
+		F44CE28A2FA05EA9004C30E9 /* ZXBlockLogResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1FA2FA05EA9004C30E9 /* ZXBlockLogResult.h */; };
+		F44CE28B2FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1FF2FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.h */; };
+		F44CE28C2FA05EA9004C30E9 /* ZXDataStoreSQlite.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE22D2FA05EA9004C30E9 /* ZXDataStoreSQlite.h */; };
+		F44CE28D2FA05EA9004C30E9 /* ZXClassArchived.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2292FA05EA9004C30E9 /* ZXClassArchived.h */; };
+		F44CE28E2FA05EA9004C30E9 /* ZXHookClassMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1EE2FA05EA9004C30E9 /* ZXHookClassMethod.h */; };
+		F44CE28F2FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2012FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.h */; };
+		F44CE2902FA05EA9004C30E9 /* UIViewController+ZXAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE24F2FA05EA9004C30E9 /* UIViewController+ZXAlert.h */; };
+		F44CE2912FA05EA9004C30E9 /* ZXHookUIGet.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2592FA05EA9004C30E9 /* ZXHookUIGet.h */; };
+		F44CE2922FA05EA9004C30E9 /* ZXMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1F32FA05EA9004C30E9 /* ZXMethodLog.h */; };
+		F44CE2932FA05EA9004C30E9 /* ZXDataConvertConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2222FA05EA9004C30E9 /* ZXDataConvertConfig.h */; };
+		F44CE2942FA05EA9004C30E9 /* NSObject+ZXToDic.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE21A2FA05EA9004C30E9 /* NSObject+ZXToDic.h */; };
+		F44CE2952FA05EA9004C30E9 /* ZXHookClass.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1EC2FA05EA9004C30E9 /* ZXHookClass.h */; };
+		F44CE2962FA05EA9004C30E9 /* NSObject+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2072FA05EA9004C30E9 /* NSObject+ZXSafetySet.h */; };
+		F44CE2972FA05EA9004C30E9 /* UIView+ZXFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2452FA05EA9004C30E9 /* UIView+ZXFrame.h */; };
+		F44CE2982FA05EA9004C30E9 /* ZXPoll.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2352FA05EA9004C30E9 /* ZXPoll.h */; };
+		F44CE2992FA05EA9004C30E9 /* CocoaSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1DF2FA05EA9004C30E9 /* CocoaSecurity.h */; };
+		F44CE29A2FA05EA9004C30E9 /* NSObject+ZXToJson.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE21C2FA05EA9004C30E9 /* NSObject+ZXToJson.h */; };
+		F44CE29B2FA05EA9004C30E9 /* ZXImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2422FA05EA9004C30E9 /* ZXImagePicker.h */; };
+		F44CE29C2FA05EA9004C30E9 /* NSString+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE2092FA05EA9004C30E9 /* NSString+ZXDataConvert.h */; };
+		F44CE29D2FA05EA9004C30E9 /* NSObject+ZXHandleLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE1D52FA05EA9004C30E9 /* NSObject+ZXHandleLoad.h */; };
+		F44CE29E2FA05EA9004C30E9 /* ZXRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE23D2FA05EA9004C30E9 /* ZXRequestBlock.m */; };
+		F44CE29F2FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2022FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.m */; };
+		F44CE2A02FA05EA9004C30E9 /* UIView+ZXHookUIGet.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2582FA05EA9004C30E9 /* UIView+ZXHookUIGet.m */; };
+		F44CE2A12FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2262FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.m */; };
+		F44CE2A22FA05EA9004C30E9 /* NSObject+ZXHandleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1D62FA05EA9004C30E9 /* NSObject+ZXHandleLoad.m */; };
+		F44CE2A32FA05EA9004C30E9 /* UIButton+ZXAddAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2532FA05EA9004C30E9 /* UIButton+ZXAddAction.m */; };
+		F44CE2A42FA05EA9004C30E9 /* ZXHookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2602FA05EA9004C30E9 /* ZXHookUtil.m */; };
+		F44CE2A52FA05EA9004C30E9 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1E92FA05EA9004C30E9 /* ANYMethodLog.m */; };
+		F44CE2A62FA05EA9004C30E9 /* NSData+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2172FA05EA9004C30E9 /* NSData+ZXDataConvert.m */; };
+		F44CE2A72FA05EA9004C30E9 /* ZXEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1E32FA05EA9004C30E9 /* ZXEncryption.m */; };
+		F44CE2A82FA05EA9004C30E9 /* NSObject+ZXToDic.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE21B2FA05EA9004C30E9 /* NSObject+ZXToDic.m */; };
+		F44CE2A92FA05EA9004C30E9 /* UIView+ZXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2462FA05EA9004C30E9 /* UIView+ZXFrame.m */; };
+		F44CE2AA2FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1DA2FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.m */; };
+		F44CE2AB2FA05EA9004C30E9 /* ZXShowImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE24A2FA05EA9004C30E9 /* ZXShowImgView.m */; };
+		F44CE2AC2FA05EA9004C30E9 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE24D2FA05EA9004C30E9 /* UIView+Toast.m */; };
+		F44CE2AD2FA05EA9004C30E9 /* ZXShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2482FA05EA9004C30E9 /* ZXShadowView.m */; };
+		F44CE2AE2FA05EA9004C30E9 /* ZXDecimalNumberTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2122FA05EA9004C30E9 /* ZXDecimalNumberTool.m */; };
+		F44CE2AF2FA05EA9004C30E9 /* ZXDataConvertConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2232FA05EA9004C30E9 /* ZXDataConvertConfig.m */; };
+		F44CE2B02FA05EA9004C30E9 /* ZXBlockLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1F92FA05EA9004C30E9 /* ZXBlockLog.m */; };
+		F44CE2B12FA05EA9004C30E9 /* ZXHttpIPGet.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE23B2FA05EA9004C30E9 /* ZXHttpIPGet.m */; };
+		F44CE2B22FA05EA9004C30E9 /* SqlResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2282FA05EA9004C30E9 /* SqlResult.m */; };
+		F44CE2B32FA05EA9004C30E9 /* ZXPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2362FA05EA9004C30E9 /* ZXPoll.m */; };
+		F44CE2B42FA05EA9004C30E9 /* NSString+ZXHookRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1D82FA05EA9004C30E9 /* NSString+ZXHookRegular.m */; };
+		F44CE2B52FA05EA9004C30E9 /* ZXHookClassPro.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1F12FA05EA9004C30E9 /* ZXHookClassPro.m */; };
+		F44CE2B62FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2042FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.m */; };
+		F44CE2B72FA05EA9004C30E9 /* UIViewController+ZXAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2502FA05EA9004C30E9 /* UIViewController+ZXAlert.m */; };
+		F44CE2B82FA05EA9004C30E9 /* ZXClassArchived.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE22A2FA05EA9004C30E9 /* ZXClassArchived.m */; };
+		F44CE2B92FA05EA9004C30E9 /* ZXHookUIGet.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE25A2FA05EA9004C30E9 /* ZXHookUIGet.m */; };
+		F44CE2BA2FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2002FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.m */; };
+		F44CE2BB2FA05EA9004C30E9 /* ZXBlockLogResult.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1FB2FA05EA9004C30E9 /* ZXBlockLogResult.m */; };
+		F44CE2BC2FA05EA9004C30E9 /* ZXCodeFloor.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE25E2FA05EA9004C30E9 /* ZXCodeFloor.m */; };
+		F44CE2BD2FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2192FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.m */; };
+		F44CE2BE2FA05EA9004C30E9 /* ZXURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE23F2FA05EA9004C30E9 /* ZXURLProtocol.m */; };
+		F44CE2BF2FA05EA9004C30E9 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1DD2FA05EA9004C30E9 /* Base64.m */; };
+		F44CE2C02FA05EA9004C30E9 /* ZXHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1E62FA05EA9004C30E9 /* ZXHttpRequest.m */; };
+		F44CE2C12FA05EA9004C30E9 /* UIButton+ZXHookAction.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2552FA05EA9004C30E9 /* UIButton+ZXHookAction.m */; };
+		F44CE2C22FA05EA9004C30E9 /* ZXDataStoreSQlite.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE22E2FA05EA9004C30E9 /* ZXDataStoreSQlite.m */; };
+		F44CE2C32FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1EB2FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.m */; };
+		F44CE2C42FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2392FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.m */; };
+		F44CE2C52FA05EA9004C30E9 /* ZXClassPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE20E2FA05EA9004C30E9 /* ZXClassPrint.m */; };
+		F44CE2C62FA05EA9004C30E9 /* ZXHookClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1ED2FA05EA9004C30E9 /* ZXHookClass.m */; };
+		F44CE2C72FA05EA9004C30E9 /* NSObject+ZXToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE21F2FA05EA9004C30E9 /* NSObject+ZXToModel.m */; };
+		F44CE2C82FA05EA9004C30E9 /* ZXBlockLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1FD2FA05EA9004C30E9 /* ZXBlockLogTool.m */; };
+		F44CE2C92FA05EA9004C30E9 /* ZXDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2102FA05EA9004C30E9 /* ZXDataType.m */; };
+		F44CE2CA2FA05EA9004C30E9 /* ZXMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1F42FA05EA9004C30E9 /* ZXMethodLog.m */; };
+		F44CE2CB2FA05EA9004C30E9 /* ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2212FA05EA9004C30E9 /* ZXDataConvert.m */; };
+		F44CE2CC2FA05EA9004C30E9 /* ZXDataStoreCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE22C2FA05EA9004C30E9 /* ZXDataStoreCache.m */; };
+		F44CE2CD2FA05EA9004C30E9 /* NSObject+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2082FA05EA9004C30E9 /* NSObject+ZXSafetySet.m */; };
+		F44CE2CE2FA05EA9004C30E9 /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1E02FA05EA9004C30E9 /* CocoaSecurity.m */; };
+		F44CE2CF2FA05EA9004C30E9 /* NSArray+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2152FA05EA9004C30E9 /* NSArray+ZXDataConvert.m */; };
+		F44CE2D02FA05EA9004C30E9 /* ZXImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2432FA05EA9004C30E9 /* ZXImagePicker.m */; };
+		F44CE2D12FA05EA9004C30E9 /* NSObject+ZXGetProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE2062FA05EA9004C30E9 /* NSObject+ZXGetProperty.m */; };
+		F44CE2D22FA05EA9004C30E9 /* NSObject+ZXToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE21D2FA05EA9004C30E9 /* NSObject+ZXToJson.m */; };
+		F44CE2D32FA05EA9004C30E9 /* NSString+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE20A2FA05EA9004C30E9 /* NSString+ZXDataConvert.m */; };
+		F44CE2D42FA05EA9004C30E9 /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1F72FA05EA9004C30E9 /* CTBlockDescription.m */; };
+		F44CE2D52FA05EA9004C30E9 /* NSString+ZXRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE20C2FA05EA9004C30E9 /* NSString+ZXRegular.m */; };
+		F44CE2D62FA05EA9004C30E9 /* ZXHookClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F44CE1EF2FA05EA9004C30E9 /* ZXHookClassMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +163,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F44CE1692F9F562B004C30E9 /* CopyFiles */ = {
+		F44CE1692F9F562B004C30E9 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F44CE17E2F9F562B004C30E9 /* libWeiboMAppDylib.dylib in CopyFiles */,
+				F44CE17E2F9F562B004C30E9 /* libWeiboMAppDylib.dylib in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -59,7 +179,7 @@
 /* Begin PBXFileReference section */
 		F44CE16C2F9F562B004C30E9 /* WeiboMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44CE17D2F9F562B004C30E9 /* libWeiboMAppDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWeiboMAppDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		F44CE1832F9F562B004C30E9 /* WeiboMAppDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = WeiboMAppDylib.xm; sourceTree = "<group>"; };
+		F44CE1832F9F562B004C30E9 /* WeiboMAppDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = WeiboMAppDylib.xm; sourceTree = "<group>"; };
 		F44CE1842F9F562B004C30E9 /* WeiboMAppDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WeiboMAppDylib.mm; sourceTree = "<group>"; };
 		F44CE1872F9F562B004C30E9 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
 		F44CE1892F9F562B004C30E9 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
@@ -85,6 +205,126 @@
 		F44CE1B42F9F562B004C30E9 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		F44CE1B62F9F562B004C30E9 /* WeiboMAppDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeiboMAppDylib.h; sourceTree = "<group>"; };
 		F44CE1B82F9F562B004C30E9 /* WeiboMAppDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboMAppDylib.m; sourceTree = "<group>"; };
+		F44CE1CF2F9F57E5004C30E9 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		F44CE1D02F9F57E5004C30E9 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		F44CE1D52FA05EA9004C30E9 /* NSObject+ZXHandleLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXHandleLoad.h"; sourceTree = "<group>"; };
+		F44CE1D62FA05EA9004C30E9 /* NSObject+ZXHandleLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXHandleLoad.m"; sourceTree = "<group>"; };
+		F44CE1D72FA05EA9004C30E9 /* NSString+ZXHookRegular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXHookRegular.h"; sourceTree = "<group>"; };
+		F44CE1D82FA05EA9004C30E9 /* NSString+ZXHookRegular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXHookRegular.m"; sourceTree = "<group>"; };
+		F44CE1D92FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZXHandleLoad.h"; sourceTree = "<group>"; };
+		F44CE1DA2FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZXHandleLoad.m"; sourceTree = "<group>"; };
+		F44CE1DC2FA05EA9004C30E9 /* Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		F44CE1DD2FA05EA9004C30E9 /* Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		F44CE1DF2FA05EA9004C30E9 /* CocoaSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		F44CE1E02FA05EA9004C30E9 /* CocoaSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		F44CE1E22FA05EA9004C30E9 /* ZXEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXEncryption.h; sourceTree = "<group>"; };
+		F44CE1E32FA05EA9004C30E9 /* ZXEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXEncryption.m; sourceTree = "<group>"; };
+		F44CE1E52FA05EA9004C30E9 /* ZXHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHttpRequest.h; sourceTree = "<group>"; };
+		F44CE1E62FA05EA9004C30E9 /* ZXHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHttpRequest.m; sourceTree = "<group>"; };
+		F44CE1E82FA05EA9004C30E9 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANYMethodLog.h; sourceTree = "<group>"; };
+		F44CE1E92FA05EA9004C30E9 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANYMethodLog.m; sourceTree = "<group>"; };
+		F44CE1EA2FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXHookClassUtil.h"; sourceTree = "<group>"; };
+		F44CE1EB2FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXHookClassUtil.m"; sourceTree = "<group>"; };
+		F44CE1EC2FA05EA9004C30E9 /* ZXHookClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookClass.h; sourceTree = "<group>"; };
+		F44CE1ED2FA05EA9004C30E9 /* ZXHookClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookClass.m; sourceTree = "<group>"; };
+		F44CE1EE2FA05EA9004C30E9 /* ZXHookClassMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookClassMethod.h; sourceTree = "<group>"; };
+		F44CE1EF2FA05EA9004C30E9 /* ZXHookClassMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookClassMethod.m; sourceTree = "<group>"; };
+		F44CE1F02FA05EA9004C30E9 /* ZXHookClassPro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookClassPro.h; sourceTree = "<group>"; };
+		F44CE1F12FA05EA9004C30E9 /* ZXHookClassPro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookClassPro.m; sourceTree = "<group>"; };
+		F44CE1F32FA05EA9004C30E9 /* ZXMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXMethodLog.h; sourceTree = "<group>"; };
+		F44CE1F42FA05EA9004C30E9 /* ZXMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXMethodLog.m; sourceTree = "<group>"; };
+		F44CE1F62FA05EA9004C30E9 /* CTBlockDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
+		F44CE1F72FA05EA9004C30E9 /* CTBlockDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTBlockDescription.m; sourceTree = "<group>"; };
+		F44CE1F82FA05EA9004C30E9 /* ZXBlockLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXBlockLog.h; sourceTree = "<group>"; };
+		F44CE1F92FA05EA9004C30E9 /* ZXBlockLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLog.m; sourceTree = "<group>"; };
+		F44CE1FA2FA05EA9004C30E9 /* ZXBlockLogResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXBlockLogResult.h; sourceTree = "<group>"; };
+		F44CE1FB2FA05EA9004C30E9 /* ZXBlockLogResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLogResult.m; sourceTree = "<group>"; };
+		F44CE1FC2FA05EA9004C30E9 /* ZXBlockLogTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXBlockLogTool.h; sourceTree = "<group>"; };
+		F44CE1FD2FA05EA9004C30E9 /* ZXBlockLogTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLogTool.m; sourceTree = "<group>"; };
+		F44CE1FF2FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXSafetySet.h"; sourceTree = "<group>"; };
+		F44CE2002FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXSafetySet.m"; sourceTree = "<group>"; };
+		F44CE2012FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ZXSafetySet.h"; sourceTree = "<group>"; };
+		F44CE2022FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ZXSafetySet.m"; sourceTree = "<group>"; };
+		F44CE2032FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXDataConvertRule.h"; sourceTree = "<group>"; };
+		F44CE2042FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXDataConvertRule.m"; sourceTree = "<group>"; };
+		F44CE2052FA05EA9004C30E9 /* NSObject+ZXGetProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXGetProperty.h"; sourceTree = "<group>"; };
+		F44CE2062FA05EA9004C30E9 /* NSObject+ZXGetProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXGetProperty.m"; sourceTree = "<group>"; };
+		F44CE2072FA05EA9004C30E9 /* NSObject+ZXSafetySet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXSafetySet.h"; sourceTree = "<group>"; };
+		F44CE2082FA05EA9004C30E9 /* NSObject+ZXSafetySet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXSafetySet.m"; sourceTree = "<group>"; };
+		F44CE2092FA05EA9004C30E9 /* NSString+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXDataConvert.h"; sourceTree = "<group>"; };
+		F44CE20A2FA05EA9004C30E9 /* NSString+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXDataConvert.m"; sourceTree = "<group>"; };
+		F44CE20B2FA05EA9004C30E9 /* NSString+ZXRegular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXRegular.h"; sourceTree = "<group>"; };
+		F44CE20C2FA05EA9004C30E9 /* NSString+ZXRegular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXRegular.m"; sourceTree = "<group>"; };
+		F44CE20D2FA05EA9004C30E9 /* ZXClassPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXClassPrint.h; sourceTree = "<group>"; };
+		F44CE20E2FA05EA9004C30E9 /* ZXClassPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXClassPrint.m; sourceTree = "<group>"; };
+		F44CE20F2FA05EA9004C30E9 /* ZXDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataType.h; sourceTree = "<group>"; };
+		F44CE2102FA05EA9004C30E9 /* ZXDataType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataType.m; sourceTree = "<group>"; };
+		F44CE2112FA05EA9004C30E9 /* ZXDecimalNumberTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDecimalNumberTool.h; sourceTree = "<group>"; };
+		F44CE2122FA05EA9004C30E9 /* ZXDecimalNumberTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDecimalNumberTool.m; sourceTree = "<group>"; };
+		F44CE2142FA05EA9004C30E9 /* NSArray+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZXDataConvert.h"; sourceTree = "<group>"; };
+		F44CE2152FA05EA9004C30E9 /* NSArray+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZXDataConvert.m"; sourceTree = "<group>"; };
+		F44CE2162FA05EA9004C30E9 /* NSData+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ZXDataConvert.h"; sourceTree = "<group>"; };
+		F44CE2172FA05EA9004C30E9 /* NSData+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZXDataConvert.m"; sourceTree = "<group>"; };
+		F44CE2182FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXDataConvert.h"; sourceTree = "<group>"; };
+		F44CE2192FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXDataConvert.m"; sourceTree = "<group>"; };
+		F44CE21A2FA05EA9004C30E9 /* NSObject+ZXToDic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXToDic.h"; sourceTree = "<group>"; };
+		F44CE21B2FA05EA9004C30E9 /* NSObject+ZXToDic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXToDic.m"; sourceTree = "<group>"; };
+		F44CE21C2FA05EA9004C30E9 /* NSObject+ZXToJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXToJson.h"; sourceTree = "<group>"; };
+		F44CE21D2FA05EA9004C30E9 /* NSObject+ZXToJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXToJson.m"; sourceTree = "<group>"; };
+		F44CE21E2FA05EA9004C30E9 /* NSObject+ZXToModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXToModel.h"; sourceTree = "<group>"; };
+		F44CE21F2FA05EA9004C30E9 /* NSObject+ZXToModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXToModel.m"; sourceTree = "<group>"; };
+		F44CE2202FA05EA9004C30E9 /* ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataConvert.h; sourceTree = "<group>"; };
+		F44CE2212FA05EA9004C30E9 /* ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataConvert.m; sourceTree = "<group>"; };
+		F44CE2222FA05EA9004C30E9 /* ZXDataConvertConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataConvertConfig.h; sourceTree = "<group>"; };
+		F44CE2232FA05EA9004C30E9 /* ZXDataConvertConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataConvertConfig.m; sourceTree = "<group>"; };
+		F44CE2252FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXSQliteHandle.h"; sourceTree = "<group>"; };
+		F44CE2262FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXSQliteHandle.m"; sourceTree = "<group>"; };
+		F44CE2272FA05EA9004C30E9 /* SqlResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlResult.h; sourceTree = "<group>"; };
+		F44CE2282FA05EA9004C30E9 /* SqlResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlResult.m; sourceTree = "<group>"; };
+		F44CE2292FA05EA9004C30E9 /* ZXClassArchived.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXClassArchived.h; sourceTree = "<group>"; };
+		F44CE22A2FA05EA9004C30E9 /* ZXClassArchived.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXClassArchived.m; sourceTree = "<group>"; };
+		F44CE22B2FA05EA9004C30E9 /* ZXDataStoreCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataStoreCache.h; sourceTree = "<group>"; };
+		F44CE22C2FA05EA9004C30E9 /* ZXDataStoreCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataStoreCache.m; sourceTree = "<group>"; };
+		F44CE22D2FA05EA9004C30E9 /* ZXDataStoreSQlite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataStoreSQlite.h; sourceTree = "<group>"; };
+		F44CE22E2FA05EA9004C30E9 /* ZXDataStoreSQlite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataStoreSQlite.m; sourceTree = "<group>"; };
+		F44CE2302FA05EA9004C30E9 /* USAGE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = USAGE.md; sourceTree = "<group>"; };
+		F44CE2312FA05EA9004C30E9 /* ZXDataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataHandle.h; sourceTree = "<group>"; };
+		F44CE2322FA05EA9004C30E9 /* ZXDataHandleHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataHandleHeaders.h; sourceTree = "<group>"; };
+		F44CE2332FA05EA9004C30E9 /* ZXDataHandleLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataHandleLog.h; sourceTree = "<group>"; };
+		F44CE2352FA05EA9004C30E9 /* ZXPoll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXPoll.h; sourceTree = "<group>"; };
+		F44CE2362FA05EA9004C30E9 /* ZXPoll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXPoll.m; sourceTree = "<group>"; };
+		F44CE2382FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+ZXHttpProxy.h"; sourceTree = "<group>"; };
+		F44CE2392FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+ZXHttpProxy.m"; sourceTree = "<group>"; };
+		F44CE23A2FA05EA9004C30E9 /* ZXHttpIPGet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHttpIPGet.h; sourceTree = "<group>"; };
+		F44CE23B2FA05EA9004C30E9 /* ZXHttpIPGet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHttpIPGet.m; sourceTree = "<group>"; };
+		F44CE23C2FA05EA9004C30E9 /* ZXRequestBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXRequestBlock.h; sourceTree = "<group>"; };
+		F44CE23D2FA05EA9004C30E9 /* ZXRequestBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXRequestBlock.m; sourceTree = "<group>"; };
+		F44CE23E2FA05EA9004C30E9 /* ZXURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXURLProtocol.h; sourceTree = "<group>"; };
+		F44CE23F2FA05EA9004C30E9 /* ZXURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXURLProtocol.m; sourceTree = "<group>"; };
+		F44CE2422FA05EA9004C30E9 /* ZXImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXImagePicker.h; sourceTree = "<group>"; };
+		F44CE2432FA05EA9004C30E9 /* ZXImagePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXImagePicker.m; sourceTree = "<group>"; };
+		F44CE2452FA05EA9004C30E9 /* UIView+ZXFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXFrame.h"; sourceTree = "<group>"; };
+		F44CE2462FA05EA9004C30E9 /* UIView+ZXFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXFrame.m"; sourceTree = "<group>"; };
+		F44CE2472FA05EA9004C30E9 /* ZXShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXShadowView.h; sourceTree = "<group>"; };
+		F44CE2482FA05EA9004C30E9 /* ZXShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXShadowView.m; sourceTree = "<group>"; };
+		F44CE2492FA05EA9004C30E9 /* ZXShowImgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXShowImgView.h; sourceTree = "<group>"; };
+		F44CE24A2FA05EA9004C30E9 /* ZXShowImgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXShowImgView.m; sourceTree = "<group>"; };
+		F44CE24C2FA05EA9004C30E9 /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		F44CE24D2FA05EA9004C30E9 /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		F44CE24F2FA05EA9004C30E9 /* UIViewController+ZXAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZXAlert.h"; sourceTree = "<group>"; };
+		F44CE2502FA05EA9004C30E9 /* UIViewController+ZXAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZXAlert.m"; sourceTree = "<group>"; };
+		F44CE2522FA05EA9004C30E9 /* UIButton+ZXAddAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZXAddAction.h"; sourceTree = "<group>"; };
+		F44CE2532FA05EA9004C30E9 /* UIButton+ZXAddAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZXAddAction.m"; sourceTree = "<group>"; };
+		F44CE2542FA05EA9004C30E9 /* UIButton+ZXHookAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZXHookAction.h"; sourceTree = "<group>"; };
+		F44CE2552FA05EA9004C30E9 /* UIButton+ZXHookAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZXHookAction.m"; sourceTree = "<group>"; };
+		F44CE2572FA05EA9004C30E9 /* UIView+ZXHookUIGet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXHookUIGet.h"; sourceTree = "<group>"; };
+		F44CE2582FA05EA9004C30E9 /* UIView+ZXHookUIGet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXHookUIGet.m"; sourceTree = "<group>"; };
+		F44CE2592FA05EA9004C30E9 /* ZXHookUIGet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookUIGet.h; sourceTree = "<group>"; };
+		F44CE25A2FA05EA9004C30E9 /* ZXHookUIGet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookUIGet.m; sourceTree = "<group>"; };
+		F44CE25D2FA05EA9004C30E9 /* ZXCodeFloor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXCodeFloor.h; sourceTree = "<group>"; };
+		F44CE25E2FA05EA9004C30E9 /* ZXCodeFloor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXCodeFloor.m; sourceTree = "<group>"; };
+		F44CE25F2FA05EA9004C30E9 /* ZXHookUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookUtil.h; sourceTree = "<group>"; };
+		F44CE2602FA05EA9004C30E9 /* ZXHookUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -95,6 +335,7 @@
 				Info.plist,
 				"Scripts/quick-resign.sh",
 				"TargetApp/put ipa or app here",
+				TargetApp/WeiboOverseas.app,
 			);
 			target = F44CE16B2F9F562B004C30E9 /* WeiboMApp */;
 		};
@@ -158,6 +399,7 @@
 				F44CE1A72F9F562B004C30E9 /* Tools */,
 				F44CE1AE2F9F562B004C30E9 /* AntiAntiDebug */,
 				F44CE1B12F9F562B004C30E9 /* fishhook */,
+				F44CE2612FA05EA9004C30E9 /* ZXHookUtil */,
 				F44CE1AC2F9F562B004C30E9 /* Supporting Files */,
 			);
 			path = WeiboMAppDylib;
@@ -175,6 +417,8 @@
 		F44CE1862F9F562B004C30E9 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				F44CE1CF2F9F57E5004C30E9 /* MDCycriptManager.h */,
+				F44CE1D02F9F57E5004C30E9 /* MDCycriptManager.m */,
 				F44CE1872F9F562B004C30E9 /* MDConfigManager.h */,
 				F44CE1892F9F562B004C30E9 /* MDConfigManager.m */,
 				F44CE18B2F9F562B004C30E9 /* MDMethodTrace.h */,
@@ -236,6 +480,307 @@
 			path = fishhook;
 			sourceTree = "<group>";
 		};
+		F44CE1DB2FA05EA9004C30E9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1D52FA05EA9004C30E9 /* NSObject+ZXHandleLoad.h */,
+				F44CE1D62FA05EA9004C30E9 /* NSObject+ZXHandleLoad.m */,
+				F44CE1D72FA05EA9004C30E9 /* NSString+ZXHookRegular.h */,
+				F44CE1D82FA05EA9004C30E9 /* NSString+ZXHookRegular.m */,
+				F44CE1D92FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.h */,
+				F44CE1DA2FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F44CE1DE2FA05EA9004C30E9 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1DC2FA05EA9004C30E9 /* Base64.h */,
+				F44CE1DD2FA05EA9004C30E9 /* Base64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		F44CE1E12FA05EA9004C30E9 /* CocoaSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1DE2FA05EA9004C30E9 /* Base64 */,
+				F44CE1DF2FA05EA9004C30E9 /* CocoaSecurity.h */,
+				F44CE1E02FA05EA9004C30E9 /* CocoaSecurity.m */,
+			);
+			path = CocoaSecurity;
+			sourceTree = "<group>";
+		};
+		F44CE1E42FA05EA9004C30E9 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1E12FA05EA9004C30E9 /* CocoaSecurity */,
+				F44CE1E22FA05EA9004C30E9 /* ZXEncryption.h */,
+				F44CE1E32FA05EA9004C30E9 /* ZXEncryption.m */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		F44CE1E72FA05EA9004C30E9 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1E52FA05EA9004C30E9 /* ZXHttpRequest.h */,
+				F44CE1E62FA05EA9004C30E9 /* ZXHttpRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		F44CE1F22FA05EA9004C30E9 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1E82FA05EA9004C30E9 /* ANYMethodLog.h */,
+				F44CE1E92FA05EA9004C30E9 /* ANYMethodLog.m */,
+				F44CE1EA2FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.h */,
+				F44CE1EB2FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.m */,
+				F44CE1EC2FA05EA9004C30E9 /* ZXHookClass.h */,
+				F44CE1ED2FA05EA9004C30E9 /* ZXHookClass.m */,
+				F44CE1EE2FA05EA9004C30E9 /* ZXHookClassMethod.h */,
+				F44CE1EF2FA05EA9004C30E9 /* ZXHookClassMethod.m */,
+				F44CE1F02FA05EA9004C30E9 /* ZXHookClassPro.h */,
+				F44CE1F12FA05EA9004C30E9 /* ZXHookClassPro.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		F44CE1F52FA05EA9004C30E9 /* MethodLog */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1F22FA05EA9004C30E9 /* BaseClass */,
+				F44CE1F32FA05EA9004C30E9 /* ZXMethodLog.h */,
+				F44CE1F42FA05EA9004C30E9 /* ZXMethodLog.m */,
+			);
+			path = MethodLog;
+			sourceTree = "<group>";
+		};
+		F44CE1FE2FA05EA9004C30E9 /* ZXBlockLog */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1F62FA05EA9004C30E9 /* CTBlockDescription.h */,
+				F44CE1F72FA05EA9004C30E9 /* CTBlockDescription.m */,
+				F44CE1F82FA05EA9004C30E9 /* ZXBlockLog.h */,
+				F44CE1F92FA05EA9004C30E9 /* ZXBlockLog.m */,
+				F44CE1FA2FA05EA9004C30E9 /* ZXBlockLogResult.h */,
+				F44CE1FB2FA05EA9004C30E9 /* ZXBlockLogResult.m */,
+				F44CE1FC2FA05EA9004C30E9 /* ZXBlockLogTool.h */,
+				F44CE1FD2FA05EA9004C30E9 /* ZXBlockLogTool.m */,
+			);
+			path = ZXBlockLog;
+			sourceTree = "<group>";
+		};
+		F44CE2132FA05EA9004C30E9 /* BaseTool */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1FF2FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.h */,
+				F44CE2002FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.m */,
+				F44CE2012FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.h */,
+				F44CE2022FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.m */,
+				F44CE2032FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.h */,
+				F44CE2042FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.m */,
+				F44CE2052FA05EA9004C30E9 /* NSObject+ZXGetProperty.h */,
+				F44CE2062FA05EA9004C30E9 /* NSObject+ZXGetProperty.m */,
+				F44CE2072FA05EA9004C30E9 /* NSObject+ZXSafetySet.h */,
+				F44CE2082FA05EA9004C30E9 /* NSObject+ZXSafetySet.m */,
+				F44CE2092FA05EA9004C30E9 /* NSString+ZXDataConvert.h */,
+				F44CE20A2FA05EA9004C30E9 /* NSString+ZXDataConvert.m */,
+				F44CE20B2FA05EA9004C30E9 /* NSString+ZXRegular.h */,
+				F44CE20C2FA05EA9004C30E9 /* NSString+ZXRegular.m */,
+				F44CE20D2FA05EA9004C30E9 /* ZXClassPrint.h */,
+				F44CE20E2FA05EA9004C30E9 /* ZXClassPrint.m */,
+				F44CE20F2FA05EA9004C30E9 /* ZXDataType.h */,
+				F44CE2102FA05EA9004C30E9 /* ZXDataType.m */,
+				F44CE2112FA05EA9004C30E9 /* ZXDecimalNumberTool.h */,
+				F44CE2122FA05EA9004C30E9 /* ZXDecimalNumberTool.m */,
+			);
+			path = BaseTool;
+			sourceTree = "<group>";
+		};
+		F44CE2242FA05EA9004C30E9 /* ZXDataConvert */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2132FA05EA9004C30E9 /* BaseTool */,
+				F44CE2142FA05EA9004C30E9 /* NSArray+ZXDataConvert.h */,
+				F44CE2152FA05EA9004C30E9 /* NSArray+ZXDataConvert.m */,
+				F44CE2162FA05EA9004C30E9 /* NSData+ZXDataConvert.h */,
+				F44CE2172FA05EA9004C30E9 /* NSData+ZXDataConvert.m */,
+				F44CE2182FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.h */,
+				F44CE2192FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.m */,
+				F44CE21A2FA05EA9004C30E9 /* NSObject+ZXToDic.h */,
+				F44CE21B2FA05EA9004C30E9 /* NSObject+ZXToDic.m */,
+				F44CE21C2FA05EA9004C30E9 /* NSObject+ZXToJson.h */,
+				F44CE21D2FA05EA9004C30E9 /* NSObject+ZXToJson.m */,
+				F44CE21E2FA05EA9004C30E9 /* NSObject+ZXToModel.h */,
+				F44CE21F2FA05EA9004C30E9 /* NSObject+ZXToModel.m */,
+				F44CE2202FA05EA9004C30E9 /* ZXDataConvert.h */,
+				F44CE2212FA05EA9004C30E9 /* ZXDataConvert.m */,
+				F44CE2222FA05EA9004C30E9 /* ZXDataConvertConfig.h */,
+				F44CE2232FA05EA9004C30E9 /* ZXDataConvertConfig.m */,
+			);
+			path = ZXDataConvert;
+			sourceTree = "<group>";
+		};
+		F44CE22F2FA05EA9004C30E9 /* ZXDataStore */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2252FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.h */,
+				F44CE2262FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.m */,
+				F44CE2272FA05EA9004C30E9 /* SqlResult.h */,
+				F44CE2282FA05EA9004C30E9 /* SqlResult.m */,
+				F44CE2292FA05EA9004C30E9 /* ZXClassArchived.h */,
+				F44CE22A2FA05EA9004C30E9 /* ZXClassArchived.m */,
+				F44CE22B2FA05EA9004C30E9 /* ZXDataStoreCache.h */,
+				F44CE22C2FA05EA9004C30E9 /* ZXDataStoreCache.m */,
+				F44CE22D2FA05EA9004C30E9 /* ZXDataStoreSQlite.h */,
+				F44CE22E2FA05EA9004C30E9 /* ZXDataStoreSQlite.m */,
+			);
+			path = ZXDataStore;
+			sourceTree = "<group>";
+		};
+		F44CE2342FA05EA9004C30E9 /* ZXDataHandle */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2242FA05EA9004C30E9 /* ZXDataConvert */,
+				F44CE22F2FA05EA9004C30E9 /* ZXDataStore */,
+				F44CE2302FA05EA9004C30E9 /* USAGE.md */,
+				F44CE2312FA05EA9004C30E9 /* ZXDataHandle.h */,
+				F44CE2322FA05EA9004C30E9 /* ZXDataHandleHeaders.h */,
+				F44CE2332FA05EA9004C30E9 /* ZXDataHandleLog.h */,
+			);
+			path = ZXDataHandle;
+			sourceTree = "<group>";
+		};
+		F44CE2372FA05EA9004C30E9 /* ZXPoll */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2352FA05EA9004C30E9 /* ZXPoll.h */,
+				F44CE2362FA05EA9004C30E9 /* ZXPoll.m */,
+			);
+			path = ZXPoll;
+			sourceTree = "<group>";
+		};
+		F44CE2402FA05EA9004C30E9 /* ZXRequestBlock */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2382FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.h */,
+				F44CE2392FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.m */,
+				F44CE23A2FA05EA9004C30E9 /* ZXHttpIPGet.h */,
+				F44CE23B2FA05EA9004C30E9 /* ZXHttpIPGet.m */,
+				F44CE23C2FA05EA9004C30E9 /* ZXRequestBlock.h */,
+				F44CE23D2FA05EA9004C30E9 /* ZXRequestBlock.m */,
+				F44CE23E2FA05EA9004C30E9 /* ZXURLProtocol.h */,
+				F44CE23F2FA05EA9004C30E9 /* ZXURLProtocol.m */,
+			);
+			path = ZXRequestBlock;
+			sourceTree = "<group>";
+		};
+		F44CE2412FA05EA9004C30E9 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1E42FA05EA9004C30E9 /* Encryption */,
+				F44CE1E72FA05EA9004C30E9 /* HttpRequest */,
+				F44CE1F52FA05EA9004C30E9 /* MethodLog */,
+				F44CE1FE2FA05EA9004C30E9 /* ZXBlockLog */,
+				F44CE2342FA05EA9004C30E9 /* ZXDataHandle */,
+				F44CE2372FA05EA9004C30E9 /* ZXPoll */,
+				F44CE2402FA05EA9004C30E9 /* ZXRequestBlock */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F44CE2442FA05EA9004C30E9 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2422FA05EA9004C30E9 /* ZXImagePicker.h */,
+				F44CE2432FA05EA9004C30E9 /* ZXImagePicker.m */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		F44CE24B2FA05EA9004C30E9 /* ShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2452FA05EA9004C30E9 /* UIView+ZXFrame.h */,
+				F44CE2462FA05EA9004C30E9 /* UIView+ZXFrame.m */,
+				F44CE2472FA05EA9004C30E9 /* ZXShadowView.h */,
+				F44CE2482FA05EA9004C30E9 /* ZXShadowView.m */,
+				F44CE2492FA05EA9004C30E9 /* ZXShowImgView.h */,
+				F44CE24A2FA05EA9004C30E9 /* ZXShowImgView.m */,
+			);
+			path = ShadowView;
+			sourceTree = "<group>";
+		};
+		F44CE24E2FA05EA9004C30E9 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE24C2FA05EA9004C30E9 /* UIView+Toast.h */,
+				F44CE24D2FA05EA9004C30E9 /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		F44CE2512FA05EA9004C30E9 /* UIAlert */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE24F2FA05EA9004C30E9 /* UIViewController+ZXAlert.h */,
+				F44CE2502FA05EA9004C30E9 /* UIViewController+ZXAlert.m */,
+			);
+			path = UIAlert;
+			sourceTree = "<group>";
+		};
+		F44CE2562FA05EA9004C30E9 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2522FA05EA9004C30E9 /* UIButton+ZXAddAction.h */,
+				F44CE2532FA05EA9004C30E9 /* UIButton+ZXAddAction.m */,
+				F44CE2542FA05EA9004C30E9 /* UIButton+ZXHookAction.h */,
+				F44CE2552FA05EA9004C30E9 /* UIButton+ZXHookAction.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		F44CE25B2FA05EA9004C30E9 /* UIGet */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2572FA05EA9004C30E9 /* UIView+ZXHookUIGet.h */,
+				F44CE2582FA05EA9004C30E9 /* UIView+ZXHookUIGet.m */,
+				F44CE2592FA05EA9004C30E9 /* ZXHookUIGet.h */,
+				F44CE25A2FA05EA9004C30E9 /* ZXHookUIGet.m */,
+			);
+			path = UIGet;
+			sourceTree = "<group>";
+		};
+		F44CE25C2FA05EA9004C30E9 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE2442FA05EA9004C30E9 /* ImagePicker */,
+				F44CE24B2FA05EA9004C30E9 /* ShadowView */,
+				F44CE24E2FA05EA9004C30E9 /* Toast */,
+				F44CE2512FA05EA9004C30E9 /* UIAlert */,
+				F44CE2562FA05EA9004C30E9 /* UIButton */,
+				F44CE25B2FA05EA9004C30E9 /* UIGet */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F44CE2612FA05EA9004C30E9 /* ZXHookUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F44CE1DB2FA05EA9004C30E9 /* Category */,
+				F44CE2412FA05EA9004C30E9 /* Foundation */,
+				F44CE25C2FA05EA9004C30E9 /* UIKit */,
+				F44CE25D2FA05EA9004C30E9 /* ZXCodeFloor.h */,
+				F44CE25E2FA05EA9004C30E9 /* ZXCodeFloor.m */,
+				F44CE25F2FA05EA9004C30E9 /* ZXHookUtil.h */,
+				F44CE2602FA05EA9004C30E9 /* ZXHookUtil.m */,
+			);
+			path = ZXHookUtil;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -244,7 +789,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44CE18C2F9F562B004C30E9 /* MDMethodTrace.h in Headers */,
+				F44CE2622FA05EA9004C30E9 /* ZXHttpIPGet.h in Headers */,
+				F44CE2632FA05EA9004C30E9 /* ZXRequestBlock.h in Headers */,
+				F44CE2642FA05EA9004C30E9 /* ZXHttpRequest.h in Headers */,
+				F44CE2652FA05EA9004C30E9 /* ZXDataType.h in Headers */,
+				F44CE2662FA05EA9004C30E9 /* ZXDecimalNumberTool.h in Headers */,
+				F44CE2672FA05EA9004C30E9 /* SqlResult.h in Headers */,
+				F44CE2682FA05EA9004C30E9 /* ZXShowImgView.h in Headers */,
+				F44CE2692FA05EA9004C30E9 /* ZXURLProtocol.h in Headers */,
+				F44CE26A2FA05EA9004C30E9 /* NSObject+ZXToModel.h in Headers */,
+				F44CE26B2FA05EA9004C30E9 /* ZXShadowView.h in Headers */,
+				F44CE26C2FA05EA9004C30E9 /* CTBlockDescription.h in Headers */,
+				F44CE26D2FA05EA9004C30E9 /* NSString+ZXHookRegular.h in Headers */,
+				F44CE26E2FA05EA9004C30E9 /* ZXDataHandleHeaders.h in Headers */,
+				F44CE26F2FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.h in Headers */,
+				F44CE2702FA05EA9004C30E9 /* UIButton+ZXHookAction.h in Headers */,
+				F44CE2712FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.h in Headers */,
+				F44CE2722FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.h in Headers */,
+				F44CE2732FA05EA9004C30E9 /* ZXBlockLogTool.h in Headers */,
+				F44CE2742FA05EA9004C30E9 /* UIView+Toast.h in Headers */,
+				F44CE2752FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.h in Headers */,
+				F44CE2762FA05EA9004C30E9 /* ZXDataStoreCache.h in Headers */,
+				F44CE2772FA05EA9004C30E9 /* NSObject+ZXGetProperty.h in Headers */,
+				F44CE2782FA05EA9004C30E9 /* ZXDataHandle.h in Headers */,
+				F44CE2792FA05EA9004C30E9 /* NSData+ZXDataConvert.h in Headers */,
+				F44CE27A2FA05EA9004C30E9 /* ZXHookClassPro.h in Headers */,
+				F44CE27B2FA05EA9004C30E9 /* ZXHookUtil.h in Headers */,
+				F44CE27C2FA05EA9004C30E9 /* ZXEncryption.h in Headers */,
+				F44CE27D2FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.h in Headers */,
+				F44CE27E2FA05EA9004C30E9 /* NSString+ZXRegular.h in Headers */,
+				F44CE27F2FA05EA9004C30E9 /* Base64.h in Headers */,
+				F44CE2802FA05EA9004C30E9 /* ZXClassPrint.h in Headers */,
+				F44CE2812FA05EA9004C30E9 /* ZXDataConvert.h in Headers */,
+				F44CE2822FA05EA9004C30E9 /* UIView+ZXHookUIGet.h in Headers */,
+				F44CE2832FA05EA9004C30E9 /* NSArray+ZXDataConvert.h in Headers */,
+				F44CE2842FA05EA9004C30E9 /* ANYMethodLog.h in Headers */,
+				F44CE2852FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.h in Headers */,
+				F44CE2862FA05EA9004C30E9 /* ZXDataHandleLog.h in Headers */,
+				F44CE2872FA05EA9004C30E9 /* UIButton+ZXAddAction.h in Headers */,
+				F44CE2882FA05EA9004C30E9 /* ZXCodeFloor.h in Headers */,
+				F44CE2892FA05EA9004C30E9 /* ZXBlockLog.h in Headers */,
+				F44CE28A2FA05EA9004C30E9 /* ZXBlockLogResult.h in Headers */,
+				F44CE28B2FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.h in Headers */,
+				F44CE28C2FA05EA9004C30E9 /* ZXDataStoreSQlite.h in Headers */,
+				F44CE28D2FA05EA9004C30E9 /* ZXClassArchived.h in Headers */,
+				F44CE28E2FA05EA9004C30E9 /* ZXHookClassMethod.h in Headers */,
+				F44CE28F2FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.h in Headers */,
+				F44CE2902FA05EA9004C30E9 /* UIViewController+ZXAlert.h in Headers */,
+				F44CE2912FA05EA9004C30E9 /* ZXHookUIGet.h in Headers */,
+				F44CE2922FA05EA9004C30E9 /* ZXMethodLog.h in Headers */,
+				F44CE2932FA05EA9004C30E9 /* ZXDataConvertConfig.h in Headers */,
+				F44CE2942FA05EA9004C30E9 /* NSObject+ZXToDic.h in Headers */,
+				F44CE2952FA05EA9004C30E9 /* ZXHookClass.h in Headers */,
+				F44CE2962FA05EA9004C30E9 /* NSObject+ZXSafetySet.h in Headers */,
+				F44CE2972FA05EA9004C30E9 /* UIView+ZXFrame.h in Headers */,
+				F44CE2982FA05EA9004C30E9 /* ZXPoll.h in Headers */,
+				F44CE2992FA05EA9004C30E9 /* CocoaSecurity.h in Headers */,
+				F44CE29A2FA05EA9004C30E9 /* NSObject+ZXToJson.h in Headers */,
+				F44CE29B2FA05EA9004C30E9 /* ZXImagePicker.h in Headers */,
+				F44CE29C2FA05EA9004C30E9 /* NSString+ZXDataConvert.h in Headers */,
+				F44CE29D2FA05EA9004C30E9 /* NSObject+ZXHandleLoad.h in Headers */,
 				F44CE19F2F9F562B004C30E9 /* OCMethodTrace.h in Headers */,
+				F44CE1D12F9F57E6004C30E9 /* MDCycriptManager.h in Headers */,
 				F44CE1A92F9F562B004C30E9 /* LLDBTools.h in Headers */,
 				F44CE1A32F9F562B004C30E9 /* OCSelectorTrampolines.h in Headers */,
 				F44CE1882F9F562B004C30E9 /* MDConfigManager.h in Headers */,
@@ -262,10 +868,10 @@
 			buildPhases = (
 				F44CE1652F9F562B004C30E9 /* Sources */,
 				F44CE1662F9F562B004C30E9 /* Frameworks */,
-				F44CE1672F9F562B004C30E9 /* ShellScript */,
+				F44CE1672F9F562B004C30E9 /* Run Script */,
 				F44CE1682F9F562B004C30E9 /* Resources */,
-				F44CE1692F9F562B004C30E9 /* CopyFiles */,
-				F44CE16A2F9F562B004C30E9 /* ShellScript */,
+				F44CE1692F9F562B004C30E9 /* Copy Files */,
+				F44CE16A2F9F562B004C30E9 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -286,7 +892,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F44CE1BB2F9F562B004C30E9 /* Build configuration list for PBXNativeTarget "WeiboMAppDylib" */;
 			buildPhases = (
-				F44CE1782F9F562B004C30E9 /* ShellScript */,
+				F44CE1782F9F562B004C30E9 /* Run Script */,
 				F44CE1792F9F562B004C30E9 /* Sources */,
 				F44CE17A2F9F562B004C30E9 /* Frameworks */,
 				F44CE17B2F9F562B004C30E9 /* Headers */,
@@ -328,6 +934,8 @@
 			);
 			mainGroup = F44CE1602F9F562B004C30E9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F44CE16D2F9F562B004C30E9 /* Products */;
 			projectDirPath = "";
@@ -350,7 +958,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F44CE1672F9F562B004C30E9 /* ShellScript */ = {
+		F44CE1672F9F562B004C30E9 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,15 +967,16 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${MonkeyDevPath}/Tools/pack.sh\"";
+			shellScript = "\"${MonkeyDevPath}/Tools/pack.sh\"\n";
 		};
-		F44CE16A2F9F562B004C30E9 /* ShellScript */ = {
+		F44CE16A2F9F562B004C30E9 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,15 +985,16 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${MonkeyDevPath}/Tools/pack.sh\" codesign";
+			shellScript = "\"${MonkeyDevPath}/Tools/pack.sh\" codesign\n";
 		};
-		F44CE1782F9F562B004C30E9 /* ShellScript */ = {
+		F44CE1782F9F562B004C30E9 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,13 +1003,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${MonkeyDevPath}/bin/md\" --xcbp-logos";
+			shellScript = "\"${MonkeyDevPath}/bin/md\" --xcbp-logos\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -429,8 +1040,66 @@
 				F44CE19B2F9F562B004C30E9 /* a2a3-selectortramps-i386.s in Sources */,
 				F44CE1932F9F562B004C30E9 /* a1a2-selectortramps-arm64.s in Sources */,
 				F44CE18E2F9F562B004C30E9 /* MDMethodTrace.m in Sources */,
+				F44CE29E2FA05EA9004C30E9 /* ZXRequestBlock.m in Sources */,
+				F44CE29F2FA05EA9004C30E9 /* NSMutableArray+ZXSafetySet.m in Sources */,
+				F44CE2A02FA05EA9004C30E9 /* UIView+ZXHookUIGet.m in Sources */,
+				F44CE2A12FA05EA9004C30E9 /* NSObject+ZXSQliteHandle.m in Sources */,
+				F44CE2A22FA05EA9004C30E9 /* NSObject+ZXHandleLoad.m in Sources */,
+				F44CE2A32FA05EA9004C30E9 /* UIButton+ZXAddAction.m in Sources */,
+				F44CE2A42FA05EA9004C30E9 /* ZXHookUtil.m in Sources */,
+				F44CE2A52FA05EA9004C30E9 /* ANYMethodLog.m in Sources */,
+				F44CE2A62FA05EA9004C30E9 /* NSData+ZXDataConvert.m in Sources */,
+				F44CE2A72FA05EA9004C30E9 /* ZXEncryption.m in Sources */,
+				F44CE2A82FA05EA9004C30E9 /* NSObject+ZXToDic.m in Sources */,
+				F44CE2A92FA05EA9004C30E9 /* UIView+ZXFrame.m in Sources */,
+				F44CE2AA2FA05EA9004C30E9 /* UIViewController+ZXHandleLoad.m in Sources */,
+				F44CE2AB2FA05EA9004C30E9 /* ZXShowImgView.m in Sources */,
+				F44CE2AC2FA05EA9004C30E9 /* UIView+Toast.m in Sources */,
+				F44CE2AD2FA05EA9004C30E9 /* ZXShadowView.m in Sources */,
+				F44CE2AE2FA05EA9004C30E9 /* ZXDecimalNumberTool.m in Sources */,
+				F44CE2AF2FA05EA9004C30E9 /* ZXDataConvertConfig.m in Sources */,
+				F44CE2B02FA05EA9004C30E9 /* ZXBlockLog.m in Sources */,
+				F44CE2B12FA05EA9004C30E9 /* ZXHttpIPGet.m in Sources */,
+				F44CE2B22FA05EA9004C30E9 /* SqlResult.m in Sources */,
+				F44CE2B32FA05EA9004C30E9 /* ZXPoll.m in Sources */,
+				F44CE2B42FA05EA9004C30E9 /* NSString+ZXHookRegular.m in Sources */,
+				F44CE2B52FA05EA9004C30E9 /* ZXHookClassPro.m in Sources */,
+				F44CE2B62FA05EA9004C30E9 /* NSObject+ZXDataConvertRule.m in Sources */,
+				F44CE2B72FA05EA9004C30E9 /* UIViewController+ZXAlert.m in Sources */,
+				F44CE2B82FA05EA9004C30E9 /* ZXClassArchived.m in Sources */,
+				F44CE2B92FA05EA9004C30E9 /* ZXHookUIGet.m in Sources */,
+				F44CE2BA2FA05EA9004C30E9 /* NSDictionary+ZXSafetySet.m in Sources */,
+				F44CE2BB2FA05EA9004C30E9 /* ZXBlockLogResult.m in Sources */,
+				F44CE2BC2FA05EA9004C30E9 /* ZXCodeFloor.m in Sources */,
+				F44CE2BD2FA05EA9004C30E9 /* NSDictionary+ZXDataConvert.m in Sources */,
+				F44CE2BE2FA05EA9004C30E9 /* ZXURLProtocol.m in Sources */,
+				F44CE2BF2FA05EA9004C30E9 /* Base64.m in Sources */,
+				F44CE2C02FA05EA9004C30E9 /* ZXHttpRequest.m in Sources */,
+				F44CE2C12FA05EA9004C30E9 /* UIButton+ZXHookAction.m in Sources */,
+				F44CE2C22FA05EA9004C30E9 /* ZXDataStoreSQlite.m in Sources */,
+				F44CE2C32FA05EA9004C30E9 /* NSObject+ZXHookClassUtil.m in Sources */,
+				F44CE2C42FA05EA9004C30E9 /* NSURLSession+ZXHttpProxy.m in Sources */,
+				F44CE2C52FA05EA9004C30E9 /* ZXClassPrint.m in Sources */,
+				F44CE2C62FA05EA9004C30E9 /* ZXHookClass.m in Sources */,
+				F44CE2C72FA05EA9004C30E9 /* NSObject+ZXToModel.m in Sources */,
+				F44CE2C82FA05EA9004C30E9 /* ZXBlockLogTool.m in Sources */,
+				F44CE2C92FA05EA9004C30E9 /* ZXDataType.m in Sources */,
+				F44CE2CA2FA05EA9004C30E9 /* ZXMethodLog.m in Sources */,
+				F44CE2CB2FA05EA9004C30E9 /* ZXDataConvert.m in Sources */,
+				F44CE2CC2FA05EA9004C30E9 /* ZXDataStoreCache.m in Sources */,
+				F44CE2CD2FA05EA9004C30E9 /* NSObject+ZXSafetySet.m in Sources */,
+				F44CE2CE2FA05EA9004C30E9 /* CocoaSecurity.m in Sources */,
+				F44CE2CF2FA05EA9004C30E9 /* NSArray+ZXDataConvert.m in Sources */,
+				F44CE2D02FA05EA9004C30E9 /* ZXImagePicker.m in Sources */,
+				F44CE2D12FA05EA9004C30E9 /* NSObject+ZXGetProperty.m in Sources */,
+				F44CE2D22FA05EA9004C30E9 /* NSObject+ZXToJson.m in Sources */,
+				F44CE2D32FA05EA9004C30E9 /* NSString+ZXDataConvert.m in Sources */,
+				F44CE2D42FA05EA9004C30E9 /* CTBlockDescription.m in Sources */,
+				F44CE2D52FA05EA9004C30E9 /* NSString+ZXRegular.m in Sources */,
+				F44CE2D62FA05EA9004C30E9 /* ZXHookClassMethod.m in Sources */,
 				F44CE1852F9F562B004C30E9 /* WeiboMAppDylib.mm in Sources */,
 				F44CE1B02F9F562B004C30E9 /* AntiAntiDebug.m in Sources */,
+				F44CE1D22F9F57E6004C30E9 /* MDCycriptManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +1128,7 @@
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Frameworks",
 					"$(MonkeyDevPath)/Librarys/**",
 					"$(MonkeyDevTheosPath)/vendor/lib",
 				);
@@ -476,6 +1145,7 @@
 					"$(MonkeyDevTheosPath)",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libWeiboMAppDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,6 +1163,11 @@
 					"$(inherited)",
 					"-weak_library",
 					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-weak_library",
+					"$(PROJECT_DIR)/Frameworks/libcycript.dylib",
+					"-F$(PROJECT_DIR)/Frameworks/LookinServer/ios",
+					"-framework",
+					LookinServer,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,7 +1190,7 @@
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Frameworks",
 					"$(MonkeyDevPath)/Librarys/**",
 					"$(MonkeyDevTheosPath)/vendor/lib",
 				);
@@ -531,6 +1206,7 @@
 					"$(MonkeyDevTheosPath)",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libWeiboMAppDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,11 +1240,12 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = $TARGET_NAME/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				MONKEYDEV_ADD_SUBSTRATE = NO;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_CREATE_SIGN_IPA = YES;
-				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
 				MONKEYDEV_DYLIB_NAME = "";
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;
@@ -593,11 +1270,12 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = $TARGET_NAME/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				MONKEYDEV_ADD_SUBSTRATE = NO;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_CREATE_SIGN_IPA = YES;
-				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
 				MONKEYDEV_DYLIB_NAME = "";
 				MONKEYDEV_INSERT_DYLIB = YES;
 				MONKEYDEV_RESTORE_SYMBOL = NO;

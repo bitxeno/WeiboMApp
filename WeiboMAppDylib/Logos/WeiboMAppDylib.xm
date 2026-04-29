@@ -1,63 +1,59 @@
 // See http://iphonedevwiki.net/index.php/Logos
 
+#import "ZXCodeFloor.h"
 #import <UIKit/UIKit.h>
 
-@interface CustomViewController
+%ctor{
+[ZXRequestBlock handleRequest:^NSURLRequest *(NSURLRequest *request) {
+    return request;
+} responseBlock:^NSData *(NSURLResponse *response, NSData *data) {
+    //拦截响应数据
+    //如果为http请求，则响应为NSHTTPURLResponse，可进行强制转换
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+    NSURL *url = httpResponse.URL;
+    
+#ifdef DEBUG
+    NSLog(@"拦截到请求url-%@", httpResponse.URL);
+    NSLog(@"拦截到响应数据-%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+//    printf("拦截到响应数据-%s\n", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] UTF8String]);
+#endif
+    
+    // 开屏广告
+    if ([url.path containsString:@"/v1/ad/preload"]) {
+        NSError *jsonError = nil;
+        id jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+        if ([jsonObject isKindOfClass:[NSDictionary class]]) {
+            NSMutableDictionary *jsonDict = [(NSDictionary *)jsonObject mutableCopy];
+            NSArray *ads = jsonDict[@"ads"];
+            if ([ads isKindOfClass:[NSArray class]] && ads.count > 0) {
+                jsonDict[@"ads"] = @[];
+                NSData *newData = [NSJSONSerialization dataWithJSONObject:jsonDict options:0 error:&jsonError];
+                if (newData != nil) {
+#ifdef DEBUG
+                    NSLog(@"已拦截广告接口: %@", httpResponse.URL);
+#endif
+                    return newData;
+                }
+            }
+        }
+    }
+    
+    // 微博中插广告
+    if ([url.path containsString:@"/2/ad/weibointl"]) {
+        NSString *jsonStr = @"{\"data\": [],\"errno\": 0,\"error\": \"\"}";
+        NSData *newData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+        if (newData != nil) {
+#ifdef DEBUG
+            NSLog(@"已拦截广告接口: %@", httpResponse.URL);
+#endif
+            return newData;
+        }
+    }
 
-@property (nonatomic, copy) NSString* newProperty;
 
-+ (void)classMethod;
-
-- (NSString*)getMyName;
-
-- (void)newMethod:(NSString*) output;
-
-@end
-
-%hook CustomViewController
-
-+ (void)classMethod
-{
-	%log;
-
-	%orig;
+    return data;
+}];
 }
-
-%new
--(void)newMethod:(NSString*) output{
-    NSLog(@"This is a new method : %@", output);
-}
-
-%new
-- (id)newProperty {
-    return objc_getAssociatedObject(self, @selector(newProperty));
-}
-
-%new
-- (void)setNewProperty:(id)value {
-    objc_setAssociatedObject(self, @selector(newProperty), value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (NSString*)getMyName
-{
-	%log;
-    
-    NSString* password = MSHookIvar<NSString*>(self,"_password");
-    
-    NSLog(@"password:%@", password);
-    
-    [%c(CustomViewController) classMethod];
-    
-    [self newMethod:@"output"];
-    
-    self.newProperty = @"newProperty";
-    
-    NSLog(@"newProperty : %@", self.newProperty);
-
-	return %orig();
-}
-
-%end
 
 
 // 
