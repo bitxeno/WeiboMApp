@@ -14,6 +14,10 @@ https://lookin.work/
 
 https://github.com/SmileZXLee/ZXHookUtil
 
+# 生成IPA
+
+运行之后在源代码的LatestBuild目录双击createIPA.command即可生成IPA文件。
+
 # 编译出错处理
 
 1. Multiple commands produce '/xxxx/Build/Products/Debug-iphoneos/WeiboMApp.app/Info.plist'

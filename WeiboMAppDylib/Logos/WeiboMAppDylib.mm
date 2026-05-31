@@ -15,8 +15,8 @@ static __attribute__((constructor)) void _logosLocalCtor_6abe01d2(int __unused a
     
 #ifdef DEBUG
     NSLog(@"拦截到请求url-%@", httpResponse.URL);
-    NSLog(@"拦截到响应数据-%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
 
+    printf("拦截到响应数据-\n%s\n", [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] UTF8String]);
 #endif
     
     
@@ -35,6 +35,18 @@ static __attribute__((constructor)) void _logosLocalCtor_6abe01d2(int __unused a
 #endif
                     return newData;
                 }
+            }
+        } else {
+#ifdef DEBUG
+            NSLog(@"❌ 错误详情：%@", jsonError); 
+#endif
+            NSString *jsonStr = @"{\"code\":200,\"background_interval\":5,\"last_ad_show_interval\":1800,\"realtime_api_timeout\":1000,\"realtime_video_stall_time\":300,\"ads\":[]}";
+            NSData *newData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+            if (newData != nil) {
+    #ifdef DEBUG
+                NSLog(@"已拦截广告接口: %@", httpResponse.URL);
+    #endif
+                return newData;
             }
         }
     }
