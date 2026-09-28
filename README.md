@@ -18,6 +18,17 @@ https://github.com/SmileZXLee/ZXHookUtil
 
 运行之后在源代码的LatestBuild目录双击createIPA.command即可生成IPA文件。
 
+# 生成Tweak安装包
+
+编译成功后，双击项目根目录的`createTweakPackages.command`，即可在`LatestBuild/TweakPackages`目录生成Release所需的全部文件：
+
+- `WeiboMApp_{目标App版本}.v{Tweak版本}.ipa`（createIPA.command 生成的 Target.ipa 自动重命名）
+- `{PACKAGE_ID}_{Tweak版本}_iphoneos-arm64_rootless.deb`（无根越狱）
+- `{PACKAGE_ID}_{Tweak版本}_iphoneos-arm_rootful.deb`（有根越狱）
+- `{PACKAGE_ID}_{Tweak版本}_iphoneos-arm_TrollStore.zip`（TrollStore 手动注入）
+
+发布配置（包名、版本号、注入目标App的BundleId等）在脚本顶部修改。
+
 # 编译出错处理
 
 1. Multiple commands produce '/xxxx/Build/Products/Debug-iphoneos/WeiboMApp.app/Info.plist'
