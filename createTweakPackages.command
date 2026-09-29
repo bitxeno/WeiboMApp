@@ -14,7 +14,7 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # ---------------- 发布配置（每次发版按需修改） ----------------
 PACKAGE_ID="com.bitxeno.weiboMAppTweak"
 TWEAK_NAME="WeiboMAppTweak"
-TWEAK_VERSION="1.0.0"
+TWEAK_VERSION="${TWEAK_VERSION:-1.0.0}"   # CI 中通过环境变量传入 tag 名
 FILTER_BUNDLE_ID="com.weibo.international"
 TARGET_APP_PLIST="${DIR}/WeiboMApp/TargetApp/WeiboOverseas.app/Info.plist"
 # --------------------------------------------------------------
