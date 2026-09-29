@@ -74,6 +74,11 @@ jobs:
             gh release download --repo "$GITHUB_REPOSITORY" --pattern 'WeiboOverseas_*_original.ipa' --dir /tmp/ipa_dl
             cp /tmp/ipa_dl/WeiboOverseas_*_original.ipa WeiboMApp/TargetApp/original.ipa
           fi
+          # 解压出 .app 供 pack.sh 使用；删除 ipa 本体，
+          # 避免它被 Xcode 同步文件夹组当作资源拷贝进 App（导致 ipa 体积翻倍）
+          ditto -x -k WeiboMApp/TargetApp/original.ipa /tmp/orig_extract
+          cp -rf /tmp/orig_extract/Payload/*.app WeiboMApp/TargetApp/
+          rm -f WeiboMApp/TargetApp/original.ipa
           ls -la WeiboMApp/TargetApp/
 
       - name: Build
