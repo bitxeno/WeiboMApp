@@ -29,6 +29,14 @@ https://github.com/SmileZXLee/ZXHookUtil
 
 发布配置（包名、版本号、注入目标App的BundleId等）在脚本顶部修改。
 
+# 自动发布（GitHub Actions）
+
+推送形如 `1.0.0`、`v2.0.0` 的 tag 即可自动完成构建并创建 Release，附件与本地脚本产物一致：
+
+- 仓库变量或机密中配置 `ORIGINAL_IPA_URL` 指定原始微博国际版 ipa 的下载地址（如需认证可配置机密 `IPA_URL_HEADER` 为完整请求头，如 `Authorization: Bearer xxx`）
+- 未配置 `ORIGINAL_IPA_URL` 时，回退使用仓库 Release 中名为 `WeiboOverseas_*_original.ipa` 的附件作为构建输入
+- 也可在 Actions 页面手动触发（workflow_dispatch），传入要发布的 tag 名
+
 # 编译出错处理
 
 1. Multiple commands produce '/xxxx/Build/Products/Debug-iphoneos/WeiboMApp.app/Info.plist'
